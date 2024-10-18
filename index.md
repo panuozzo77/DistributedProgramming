@@ -60,5 +60,18 @@
     - [**Problema: efficienza**](classNotes/6_Thread_3.md#**problema:-efficienza**)
     - [Soluzione Definitiva “Initialization-on-Demand Holder”](classNotes/6_Thread_3.md#soluzione-definitiva-“initialization-on-demand-holder”)
 
+## 7_Introduzione_JEE.md
 
+  - [Perché Java Enterprise](classNotes/7_Introduzione_JEE.md#perché-java-enterprise)
+      - [Architettura Multilayer](classNotes/7_Introduzione_JEE.md#architettura-multilayer)
+    - [Architettura](classNotes/7_Introduzione_JEE.md#architettura)
+  - [Componenti di Java EE](classNotes/7_Introduzione_JEE.md#componenti-di-java-ee)
+  - [Java EE Container](classNotes/7_Introduzione_JEE.md#java-ee-container)
+    - [Servizi Importanti](classNotes/7_Introduzione_JEE.md#servizi-importanti)
+  - [Packaging](classNotes/7_Introduzione_JEE.md#packaging)
+  - [Deployment Descriptor ed Annotazioni](classNotes/7_Introduzione_JEE.md#deployment-descriptor-ed-annotazioni)
+    - [Differenze](classNotes/7_Introduzione_JEE.md#differenze)
+- [Materiale Non Richiesto Per l'Esame](classNotes/7_Introduzione_JEE.md#materiale-non-richiesto-per-lesame)
+  - [L’importanza degli standard](classNotes/7_Introduzione_JEE.md#l’importanza-degli-standard)
+  - [Java Community Process](classNotes/7_Introduzione_JEE.md#java-community-process)
 
