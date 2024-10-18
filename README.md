@@ -7,9 +7,12 @@ Welcome to the **Distributed Programming** repository! This repository contains 
 
 ### Directory Descriptions
 
+- **books/**: Contains the books needed and used in this course.
+    - [bibliographic_references_lectures](/books/bibliographic_references_lectures.md): Contains Bibliographic References
+
 - **classNotes/**: This folder holds markdown files with notes taken during lectures.
 
-- **slides/**: This directory is organized into subfolders by academic year and contains lecture slides.
+- **slides/**: contains lecture slides for the Academic Year 2024/2025.
 
 ## Usage
 
