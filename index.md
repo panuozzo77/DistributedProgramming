@@ -71,7 +71,7 @@
   - [Packaging](classNotes/7_Introduzione_JEE.md#packaging)
   - [Deployment Descriptor ed Annotazioni](classNotes/7_Introduzione_JEE.md#deployment-descriptor-ed-annotazioni)
     - [Differenze](classNotes/7_Introduzione_JEE.md#differenze)
-- [Materiale Non Richiesto Per l'Esame](classNotes/7_Introduzione_JEE.md#materiale-non-richiesto-per-lesame)
+- [**Materiale Non Richiesto Per l'Esame**](classNotes/7_Introduzione_JEE.md#**materiale-non-richiesto-per-lesame**)
   - [L’importanza degli standard](classNotes/7_Introduzione_JEE.md#l’importanza-degli-standard)
   - [Java Community Process](classNotes/7_Introduzione_JEE.md#java-community-process)
 

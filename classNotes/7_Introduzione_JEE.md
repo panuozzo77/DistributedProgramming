@@ -185,7 +185,7 @@ Java EE fornisce servizi sotto forma di container. Lo sviluppatore non deve svil
 - Se esistono entrambi, XML ha la precedenza sulle annotazioni.
 - Il meccanismo preferito è l’annotazione
 
-# Materiale Non Richiesto Per l'Esame
+# **Materiale Non Richiesto Per l'Esame**
 
 ## L’importanza degli standard
 
