@@ -3,7 +3,7 @@
 🇮🇹 Benvenuto nel repository di **Programmazione Distribuita**! Questo repository contiene risorse per il corso di Programmazione Distribuita, incluse note di lezione, diapositive e suggerimenti pertinenti. Di seguito è riportata una panoramica della struttura delle cartelle e dei contenuti di ciascuna directory.
 
 ## Indice
-**Per una panoramica completa delle note di lezione, fare riferimento all'[Indice](index.md).**
+**Per una panoramica completa degli appunti delle lezioni, fare riferimento all'[Indice](index.md).**
 
 ### Descrizioni delle Directory
 
@@ -14,7 +14,7 @@
 
 - **slides/**: contiene le diapositive delle lezioni per l'Anno Accademico 2024/2025.
 
-- [Domande e Risposte](/Q&A.md): contiene le domande a cui dovresti essere in grado di rispondere dopo aver studiato ogni parte.
+- [Domande e Risposte](/Q&A.md): contiene le domande a cui dovresti essere in grado di rispondere dopo aver studiato ciascuna parte.
 
 ## Utilizzo
 
