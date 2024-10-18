@@ -1,6 +1,6 @@
 [Lezione4.pdf](/slides/4_TEORIA_4_Thread1_Nuove_AA2425.pdf)
 
-### The Free Performance Lunch
+## The Free Performance Lunch
 - Non importa quanto veloci diventeranno i processori, i software troveranno nuovi modi di «mangiare» queste prestazioni.
 - Il clock speed non è l'unica misura di performance ma è una misura istruttiva.
 - Quanto ancora continuerà la crescita?
