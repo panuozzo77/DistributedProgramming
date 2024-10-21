@@ -75,3 +75,30 @@
   - [L’importanza degli standard](classNotes/7_Introduzione_JEE.md#l’importanza-degli-standard)
   - [Java Community Process](classNotes/7_Introduzione_JEE.md#java-community-process)
 
+## 8_Context_and_Dependency_Injection.md
+
+- [Context and Dependency Injection](classNotes/8_Context_and_Dependency_Injection.md#context-and-dependency-injection)
+  - [Inversion of Control](classNotes/8_Context_and_Dependency_Injection.md#inversion-of-control)
+    - [Understanding Beans](classNotes/8_Context_and_Dependency_Injection.md#understanding-beans)
+  - [Pattern Dependency Injection](classNotes/8_Context_and_Dependency_Injection.md#pattern-dependency-injection)
+  - [Classi "Tightly Coupled"](classNotes/8_Context_and_Dependency_Injection.md#classi-"tightly-coupled")
+  - [Classi "Loosely Coupled"](classNotes/8_Context_and_Dependency_Injection.md#classi-"loosely-coupled")
+  - [Life-Cycle Management](classNotes/8_Context_and_Dependency_Injection.md#life-cycle-management)
+    - [Scope di un Bean](classNotes/8_Context_and_Dependency_Injection.md#scope-di-un-bean)
+  - [Interception](classNotes/8_Context_and_Dependency_Injection.md#interception)
+    - [La potenza degli Interceptor](classNotes/8_Context_and_Dependency_Injection.md#la-potenza-degli-interceptor)
+  - [Loose Coupling and Strong Typing](classNotes/8_Context_and_Dependency_Injection.md#loose-coupling-and-strong-typing)
+  - [Deployment Descriptor](classNotes/8_Context_and_Dependency_Injection.md#deployment-descriptor)
+
+## 9.md
+
+- [Java Persistence API](classNotes/9.md#java-persistence-api)
+  - [Introduzione](classNotes/9.md#introduzione)
+  - [Specifiche di JPA](classNotes/9.md#specifiche-di-jpa)
+    - [Cos'è un'entità](classNotes/9.md#cosè-unentità)
+  - [Ruolo dei metadati in ORM](classNotes/9.md#ruolo-dei-metadati-in-orm)
+    - [mapping di Book](classNotes/9.md#mapping-di-book)
+  - [Come fare le Query di Entità](classNotes/9.md#come-fare-le-query-di-entità)
+  - [Ruolo di EntityManager](classNotes/9.md#ruolo-di-entitymanager)
+    - [Esempio di Query](classNotes/9.md#esempio-di-query)
+
