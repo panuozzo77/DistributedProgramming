@@ -1,4 +1,4 @@
-[Lezione9.pdf](/slides/)
+[Lezione9.pdf](/slides/9_JPA_1_NuoveAA2425.pdf)
 
 # Java Persistence API
 
