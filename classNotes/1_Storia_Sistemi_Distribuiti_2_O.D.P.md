@@ -1,4 +1,5 @@
 [Lezione1.pdf](../slides/1_PrologoSDeKeywork.pdf)
+[Lezione2.pdf](/slides/2_OpenDistributedProcessingMiddleware.pdf)
 
 ![alt text](external/2/img.png)
 
