@@ -24,6 +24,18 @@ Sentiti libero di esplorare le cartelle per trovare le risorse di cui hai bisogn
 
 Questo repository è mantenuto solo per scopi educativi.
 
+## VM per Laboratorio
+
+- Scaricare VMWare Desktop Player da [qui](https://softwareupdate.vmware.com/cds/vmw-desktop/player/)
+- Scaricare l'immagine da [qui](https://drive.google.com/drive/folders/17gCR_WtiWh9aHDJ6Fj8_pBgJ9td7mbiK?usp=sharing)
+  - La macchina virtuale è configurata con:
+    - Windows 10
+    - Netbeans 12.1
+    - Glassfish 5.1
+    - Java 8 - JDK 1.8.0_271
+    - Java 15 - JDK 15.0.1
+  - Utente Macchina Virtuale: CORSO_PD password: CORSO_PD 
+
 ---
 
 🇬🇧 Welcome to the **Distributed Programming** repository! This repository contains resources for the Distributed Programming course, including class notes, slides, and relevant hints. Below is an overview of the folder structure and the contents of each directory.
@@ -49,3 +61,5 @@ Feel free to explore the folders to find the resources you need. If you have any
 ## License
 
 This repository is maintained for educational purposes only.
+
+
