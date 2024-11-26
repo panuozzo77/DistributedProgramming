@@ -1,4 +1,4 @@
-[Lezion10.pdf](/slides/10_2_EJB_1_NEW.pdf)
+[Lezione10.pdf](/slides/10_2_EJB_2_NEW.pdf)
 
 # Ciclo di vita degli EJB
 
