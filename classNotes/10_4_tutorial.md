@@ -287,7 +287,7 @@ Tasto destro > New > Persistence Unit
 - Scrivere la corretta Persistence Unit name
 - Scrivere la corretta Data Source (specificata anche in DatabasePopulator)
 
-NOTA: è possibile cliccare ‘**Source**’ invece di ‘**Design**’ per modificare direttamente il file xml (se ti piace)
+**NOTA**: è possibile cliccare ‘**Source**’ invece di ‘**Design**’ per modificare direttamente il file xml (se ti piace)
 
 ![image.png](/classNotes/external/11_tutorial/image%208.png)
 
@@ -370,7 +370,7 @@ Tasto destro sul progetto > New > Session Bean
     }
     ```
 ### 1. Riguardo alle query...
-Alternativamente a definire le Query all'interno del Bean, la professoressa ci ha spiegato che preferisce avere la definizione delle query all'interno della classe entità a cui appartengono, e poi di creare le query aggiungendone gli eventuali parametri.
+Alternativamente a definire le Query all'interno del Bean, la professoressa ci ha spiegato che preferisce avere la definizione delle query all'interno della classe entità a cui appartengono, e poi di creare le query aggiungendone gli eventuali parametri nel Bean.
 <table>
 <tr>
 <th> Classe Entità </th>
