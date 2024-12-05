@@ -4,12 +4,12 @@
 
 1. Aprire la Macchina Virtuale, utente: CORSO_PD, password: CORSO_PD
 2. Aprire Netbeans
-3. Tasto destro sulle parti vuote sui progetti
-    1. Creare Progetto Client: Java with Ant > Java Application
+3. Tasto destro sulle parti vuote sui progetti <br>
+   a. **Creare Progetto Client**: Java with Ant > Java Application
 
     ![image.png](/classNotes/external/11_tutorial/image%200.png)
 
-      b.  Creare Progetto Server: Java Enterprise > EJB Module
+   b. **Creare Progetto Server**: Java Enterprise > EJB Module
 
     ![image.png](/classNotes/external/11_tutorial/image%201.png)
 
@@ -248,12 +248,13 @@ public class DatabaseProducer {
     import javax.persistence.PersistenceContext;
 
     @Startup
+    // sotto dove c'è ( # ) significa che è specificato nella traccia 
     @DataSourceDefinition(
         className ="org.apache.derby.jdbc.EmbeddedDataSource",  //JDBC Connection Pool
-        name ="java:global/jdbc/EsameDS", //JDBC Resources>JNDI Name 'DataSource Name'
+        name ="java:global/jdbc/EsameDS", // # JDBC Resources>JNDI Name 'DataSource Name' 
         user ="APP", // necessario su VM è definito solo questo
         password ="APP",  // necessario su VM è definito solo questo
-        databaseName ="EsameDB", // Qualsiasi, viene creato on the go
+        databaseName ="EsameDB", // # Qualsiasi, viene creato on the go 
         properties = {"connectionAttributes=;create=true"} // IMPORTANTISSIMO
     )
     @Singleton
