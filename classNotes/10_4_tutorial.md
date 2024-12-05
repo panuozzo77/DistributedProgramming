@@ -1,4 +1,6 @@
-# Creazione Progetti - Guida passo passo
+## Sommario
+
+# 1. Creazione Progetti - Guida passo passo
 
 1. Aprire la Macchina Virtuale, utente: CORSO_PD, password: CORSO_PD
 2. Aprire Netbeans
@@ -14,11 +16,11 @@
     ![image.png](/classNotes/external/11_tutorial/image%202.png)
 
 
-## Risultato ‘finale’ di un progetto
+## 1. Risultato ‘finale’ di un progetto
 
 ![image.png](/classNotes/external/11_tutorial/image%203.png)
 
-# Importare LE GIUSTE librerie!
+# 1. Importare LE GIUSTE librerie!
 
 1. Prima di iniziare a scrivere qualsiasi classe Java, EJB o altro, importa le librerie corrette, perché se fai gli auto-import ti metterà tutta MUNNEZZA che non funziona
 - Tasto destro sul progetto (server) > Properties > Libraries > Add Library
@@ -37,7 +39,7 @@
 
 Le seguenti informazioni sono ESCLUSIVAMENTE per il progetto ‘Server’. Verrà specificato quando si interverrà sul progetto ‘Client’.
 
-# Creare l’entità
+# 1. Creare l’entità
 
 1. Potresti fare tasto destro sul progetto server e cliccare su **New > Entity Class**
 2. Oppure crei una qualsiasi classe Java e inserisci a mano piano piano tutti i decoratori
@@ -194,7 +196,7 @@ Le seguenti informazioni sono ESCLUSIVAMENTE per il progetto ‘Server’. Verr�
     ```
 
 
-# Java Class - DatabaseProducer
+# 1. Java Class - DatabaseProducer
 
 - Serve ESCLUSIVAMENTE per restituire l’Entity Manager
 - New > Java Class
@@ -227,7 +229,7 @@ public class DatabaseProducer {
 
 - Ricordare che bisognerà modificare opportunamente anche il file **persistence.xml**
 
-# EJB Singleton - DatabasePopulator
+# 1. EJB Singleton - DatabasePopulator
 
 - Ha il compito di popolare ed eliminare alcuni record dal database che utilizzeremo durante l’esecuzione
 - Tasto destro sul progetto > New > Session Bean > Stateless
@@ -273,7 +275,7 @@ public class DatabaseProducer {
 
 - Ricordare che bisognerà modificare opportunamente anche il file **persistence.xml**
 
-# Configurazione - persistence.xml
+# 1. Configurazione - persistence.xml
 
 Tasto destro > New > Persistence Unit
 
@@ -313,7 +315,7 @@ Non ci serve che creare l’ultimo Enterprise Java Bean che verrà chiamato dal 
 
 **Segui i prossimi passi per capire come fare.**
 
-## EJB Stateless + Interfaccia Remota
+## 1. EJB Stateless + Interfaccia Remota
 
 Tasto destro sul progetto > New > Session Bean
 
@@ -365,8 +367,79 @@ Tasto destro sul progetto > New > Session Bean
             return em.createQuery("SELECT p FROM Paziente p WHERE p.microchip = 0", Paziente.class).getResultList();
         }
     }
-
     ```
+### 1. Riguardo alle query...
+Alternativamente a definire le Query all'interno del Bean, la professoressa ci ha spiegato che preferisce avere la definizione delle query all'interno della classe entità a cui appartengono, e poi di creare le query aggiungendone gli eventuali parametri.
+<table>
+<tr>
+<th> Classe Entità </th>
+<th> Classe Bean </th>
+</tr>
+<tr>
+<td>
+
+```java
+// ... import librerie
+
+@Entity
+@NamedQueries({
+        @NamedQuery(name = "findAll", query = "SELECT a FROM Animal a"),
+        @NamedQuery(name = "findById", query = "SELECT a FROM Animal a WHERE a.id = :id"),
+        @NamedQuery(name = "findByType", query = "SELECT a FROM Animal a WHERE a.type = :tipo"),
+        @NamedQuery(name = "findByHospitalizationStatus", query = "SELECT a FROM Animal a WHERE a.hospitalized = :status"),
+        @NamedQuery(name = "noMicrochip", query = "SELECT a FROM Animal a WHERE a.microchip = 0 OR a.microchip IS NULL")
+})
+public class Animal implements Serializable {
+    // ... resto della classe
+}
+
+```
+
+</td>
+<td>
+
+```java
+// ... import librerie
+
+@Stateless(name = "AnimalBean")
+public class AnimalBean implements AnimalBeanRemote {
+
+    @Inject
+    private EntityManager em;
+
+    public Animal searchById(int id) {
+        return em.createNamedQuery("findById", Animal.class)
+                .setParameter("id", id)
+                .getSingleResult();
+    }
+
+    public List<Animal> searchByType(String tipo) {
+        return em.createNamedQuery("findByType", Animal.class)
+                .setParameter("tipo", tipo)
+                .getResultList();
+    }
+
+    public List<Animal> searchHospitalized(boolean status) {
+        return em.createNamedQuery("findByHospitalizationStatus", Animal.class)
+                .setParameter("status", status)
+                .getResultList();
+    }
+
+    public List<Animal> findAll() {
+        return em.createNamedQuery("findAll", Animal.class)
+                .getResultList();
+    }
+
+    public List<Animal> searchNoMicrochip() {
+        return em.createNamedQuery("noMicrochip", Animal.class).getResultList();
+    }
+} 
+```
+
+</td>
+</tr>
+</table>
+-->
 
 - Esempio codice Client:
 
@@ -407,7 +480,8 @@ Tasto destro sul progetto > New > Session Bean
 # Non ci resta che terminare il Client
 
 - Abbiamo terminato il codice lato Server.
-- Non ci resta che invocare il nostro Bean con il Context Lookup ed eseguire le varie operazioni specificate nella traccia
+- **Ora dobbiamo importare l'entità dal Server ed inserirla nel Client**
+- Non ci resta che invocare il nostro Bean con il Context Lookup ed eseguire le varie operazioni specificate nella traccia.
 - Il formato del Context Lookup è così definito:
 ctx.lookup("java:global/clinica_veterinaria_new/PazienteBean!server.PazienteBeanRemote");
     - java:global/     è necessario
