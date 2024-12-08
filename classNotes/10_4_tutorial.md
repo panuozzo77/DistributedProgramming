@@ -529,3 +529,49 @@ ctx.lookup("java:global/clinica_veterinaria_new/PazienteBean!server.PazienteBean
     }
 
     ```
+
+# Definire un Interceptor
+Andiamo a definire una classe Java dal lato Server e utilizziamo gli appositi decoratori
+
+```Java
+package server;
+
+import javax.interceptor.AroundInvoke;
+import javax.interceptor.Interceptor;
+import javax.interceptor.InvocationContext;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Logger;
+
+@Interceptor
+public class MethodCallInterceptor {
+
+    private static final Logger logger = Logger.getLogger(MethodCallInterceptor.class.getName());
+    
+    // Mappa per tenere traccia delle chiamate
+    private static final Map<String, Integer> methodCallCount = new HashMap<>();
+
+    @AroundInvoke
+    public Object countMethodCalls(InvocationContext context) throws Exception {
+        // Ottieni il nome del metodo chiamato
+        String methodName = context.getMethod().getName();
+        
+        // Incrementa il conteggio per il metodo
+        methodCallCount.put(methodName, methodCallCount.getOrDefault(methodName, 0) + 1);
+        
+        // Stampa il numero di invocazioni
+        logger.info("Metodo " + methodName + " chiamato " + methodCallCount.get(methodName) + " volte.");
+        
+        // Continua con l'esecuzione del metodo originale
+        return context.proceed();
+    }
+}
+```
+Successivamente, andiamo a decorare i metodi che ci interessano con ```Java @Interceptors(MethodCallInterceptor.class)```. È possibile applicarlo anche all'intera classe Bean, in modo tale che venga applicato di default a tutti i metodi come nell'esempio:
+```Java
+/// librerie...
+@Interceptors(MethodCallInterceptor.class)
+public class CircoloBean implements CircoloBeanRemote {
+    /// resto del codice della classe
+```
+
