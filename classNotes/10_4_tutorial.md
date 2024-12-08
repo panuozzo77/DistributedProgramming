@@ -575,3 +575,4 @@ public class CircoloBean implements CircoloBeanRemote {
     /// resto del codice della classe
 ```
 
+# Sistema di messaggistica
