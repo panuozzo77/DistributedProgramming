@@ -160,19 +160,24 @@
 
 ## 10_4_tutorial.md
 
-- [Creazione Progetti - Guida passo passo](classNotes/10_4_tutorial.md#creazione-progetti---guida-passo-passo)
-  - [Risultato ‘finale’ di un progetto](classNotes/10_4_tutorial.md#risultato-finale-di-un-progetto)
-- [Importare LE GIUSTE librerie!](classNotes/10_4_tutorial.md#importare-le-giuste-librerie)
-    - [Client](classNotes/10_4_tutorial.md#client)
-- [Nota:](classNotes/10_4_tutorial.md#nota)
-- [Creare l’entità](classNotes/10_4_tutorial.md#creare-lentit)
-- [Java Class - DatabaseProducer](classNotes/10_4_tutorial.md#java-class---databaseproducer)
-- [EJB Singleton - DatabasePopulator](classNotes/10_4_tutorial.md#ejb-singleton---databasepopulator)
-- [Configurazione - persistence.xml](classNotes/10_4_tutorial.md#configurazione---persistencexml)
-- [Nota:](classNotes/10_4_tutorial.md#nota)
-  - [EJB Stateless + Interfaccia Remota](classNotes/10_4_tutorial.md#ejb-stateless--interfaccia-remota)
-  - [beans.xml](classNotes/10_4_tutorial.md#beansxml)
-- [Non ci resta che terminare il Client](classNotes/10_4_tutorial.md#non-ci-resta-che-terminare-il-client)
+  - [Sommario](classNotes/10_4_tutorial.md#sommario)
+- [1. Creazione Progetti - Guida passo passo](classNotes/10_4_tutorial.md#1-creazione-progetti---guida-passo-passo)
+  - [1. Risultato ‘finale’ di un progetto](classNotes/10_4_tutorial.md#1-risultato-finale-di-un-progetto)
+- [1. Importare LE GIUSTE librerie!](classNotes/10_4_tutorial.md#1-importare-le-giuste-librerie)
+  - [1. Server](classNotes/10_4_tutorial.md#1-server)
+  - [1. Client](classNotes/10_4_tutorial.md#1-client)
+    - [**Nota**:](classNotes/10_4_tutorial.md#nota)
+- [1. Creare l’entità](classNotes/10_4_tutorial.md#1-creare-lentit)
+- [1. Java Class - DatabaseProducer](classNotes/10_4_tutorial.md#1-java-class---databaseproducer)
+- [1. EJB Singleton - DatabasePopulator](classNotes/10_4_tutorial.md#1-ejb-singleton---databasepopulator)
+- [1. Configurazione - persistence.xml](classNotes/10_4_tutorial.md#1-configurazione---persistencexml)
+  - [Nota:](classNotes/10_4_tutorial.md#nota)
+- [1. EJB Stateless + Interfaccia Remota](classNotes/10_4_tutorial.md#1-ejb-stateless--interfaccia-remota)
+  - [1. Riguardo alle query...](classNotes/10_4_tutorial.md#1-riguardo-alle-query)
+  - [1. beans.xml](classNotes/10_4_tutorial.md#1-beansxml)
+- [1. Non ci resta che terminare il Client](classNotes/10_4_tutorial.md#1-non-ci-resta-che-terminare-il-client)
+- [2. Definire un Interceptor](classNotes/10_4_tutorial.md#2-definire-un-interceptor)
+- [3. Sistema di messaggistica](classNotes/10_4_tutorial.md#3-sistema-di-messaggistica)
 
 ## 11_1_Messaging.md
 
