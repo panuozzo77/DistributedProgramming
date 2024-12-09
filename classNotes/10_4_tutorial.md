@@ -573,5 +573,46 @@ Successivamente, andiamo a decorare i metodi che ci interessano con ```Java @Int
 public class CircoloBean implements CircoloBeanRemote {
     /// resto del codice della classe
 ```
+![alt text](external/10_4_tutorial/img.png)
+![alt text](external/10_4_tutorial/img-7.png)
+
 
 # 3. Sistema di messaggistica
+
+- MessageWrapper è la 'classe fittizia' che contiene solo i dati 'minimi' che mandiamo per messaggio della classe del nostro programma, senza utilizzare l'intera classe che usiamo nel progetto.
+    - deve implementare Serializable altrimenti non è inviabile tramite messaggi
+    - essendo un oggetto 'prodotto' e 'consumato' tra un client e server, così come l'Entità, va inserito da entrambe le parti (client e server)
+
+    ![alt text](external/10_4_tutorial/img-1.png)
+
+- Questa classe si occupa di INVIARE il messaggio, utilizza un JMS (lato client)
+    - Al posto di fare ```new MessageWrapper(...)``` andrebbe reso 'interattivo' e si dovrebbe chiedere all'utente quali siano i parametri da inserire con lo scanner... 
+![alt text](external/10_4_tutorial/img-2.png)
+
+- Nella RICEZIONE, abbiamo un MDB (lato server)
+    - Implementa MessageListener
+        - quindi dobbiamo definire onMessage(Message msg)
+        - specifichiamo il topic
+        - injectiamo l'EJB (per leggere/scrivere sul db)
+        - injectiamo l'evento, se necessario (scritto nella traccia)
+        - grazie all'EJB otteniamo l'oggetto per ID
+        - eseguiamo le operazioni (in questo caso aggiornare facendo +pezziVenduti al numero delle vendite)
+        - leggi 3.1 per il codice ↓
+## 3.1 Eventi
+- **SE DOVESSIMO MANDARE UN EVENTO** serve il metodo fire()
+![alt text](external/10_4_tutorial/img-3.png)
+
+L'evento invece è questo
+![alt text](external/10_4_tutorial/img-4.png)
+
+Dovremmo avere qualcosa di simile nel nostro progetto
+![alt text](external/10_4_tutorial/img-5.png)
+
+# 4. Web Services
+- Un'entità deve essere serializzabile per essere trasferibile/utilizzabile come webService.
+    - non è l'interfaccia Serializable!
+    - **va trasmesso in formattazione xml!**
+        - aggiungendo @XmlRootElement
+    ![alt text](external/10_4_tutorial/img-6.png)
+- l'EJB se è esposto va aggiunto il decoratore @WebService
+
