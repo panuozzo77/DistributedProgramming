@@ -178,6 +178,8 @@
 - [1. Non ci resta che terminare il Client](classNotes/10_4_tutorial.md#1-non-ci-resta-che-terminare-il-client)
 - [2. Definire un Interceptor](classNotes/10_4_tutorial.md#2-definire-un-interceptor)
 - [3. Sistema di messaggistica](classNotes/10_4_tutorial.md#3-sistema-di-messaggistica)
+  - [3.1 Eventi](classNotes/10_4_tutorial.md#31-eventi)
+- [4. Web Services](classNotes/10_4_tutorial.md#4-web-services)
 
 ## 11_1_Messaging.md
 
@@ -226,4 +228,26 @@
 - [cd bin](classNotes/11_2_Messaging.md#cd-bin)
 - [comandi utili:](classNotes/11_2_Messaging.md#comandi-utili)
   - [Per impratichirsi](classNotes/11_2_Messaging.md#per-impratichirsi)
+
+## 12_1_Web_Services.md
+
+- [Service-Oriented Architecture](classNotes/12_1_Web_Services.md#service-oriented-architecture)
+  - [Cosa sono i Web Services](classNotes/12_1_Web_Services.md#cosa-sono-i-web-services)
+  - [Il paradigma dei Web Services](classNotes/12_1_Web_Services.md#il-paradigma-dei-web-services)
+  - [Requisiti di un Web Service](classNotes/12_1_Web_Services.md#requisiti-di-un-web-service)
+    - [W3C: definzione di Web Service](classNotes/12_1_Web_Services.md#w3c-definzione-di-web-service)
+  - [Da non confondere](classNotes/12_1_Web_Services.md#da-non-confondere)
+    - [SaaS](classNotes/12_1_Web_Services.md#saas)
+- [Ruoli](classNotes/12_1_Web_Services.md#ruoli)
+  - [Interazioni con i Web Services](classNotes/12_1_Web_Services.md#interazioni-con-i-web-services)
+  - [Ruolo di WSDL](classNotes/12_1_Web_Services.md#ruolo-di-wsdl)
+- [SOAP](classNotes/12_1_Web_Services.md#soap)
+  - [Continuando...](classNotes/12_1_Web_Services.md#continuando)
+- [Esempio](classNotes/12_1_Web_Services.md#esempio)
+  - [Servizio CardValidator](classNotes/12_1_Web_Services.md#servizio-cardvalidator)
+  - [L'entità scambiata: CreditCard](classNotes/12_1_Web_Services.md#lentit-scambiata-creditcard)
+
+## 12_2_Web_Services.md
+
+- [Lezione dedicata ai progetti con Web Services](classNotes/12_2_Web_Services.md#lezione-dedicata-ai-progetti-con-web-services)
 

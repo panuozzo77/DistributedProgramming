@@ -613,6 +613,65 @@ Dovremmo avere qualcosa di simile nel nostro progetto
     - non è l'interfaccia Serializable!
     - **va trasmesso in formattazione xml!**
         - aggiungendo @XmlRootElement
+        - possiamo definire sui singoli attributi della classe se sono obbligatori e possiamo rimapparli con un altro nome, come nell'esempio:
+
+        ![alt text](external/10_4_tutorial/img-8.png)
+
+
     ![alt text](external/10_4_tutorial/img-6.png)
 - l'EJB se è esposto va aggiunto il decoratore @WebService
+    - Poi va dichiarato l'endpoint
+    - ed implementato il codice deli metodi offerti dall'interfaccia che useremo
 
+    ![alt text](external/10_4_tutorial/img-9.png)
+
+## 4. Creazione progetto per Web Services
+![alt text](external/10_4_tutorial/img-10.png)
+![alt text](external/10_4_tutorial/img-11.png)
+![alt text](external/10_4_tutorial/img-12.png)
+![alt text](external/10_4_tutorial/img-13.png)
+![alt text](external/10_4_tutorial/img-14.png)
+![alt text](external/10_4_tutorial/img-15.png)
+![alt text](external/10_4_tutorial/img-16.png)
+![alt text](external/10_4_tutorial/img-17.png)
+![alt text](external/10_4_tutorial/img-18.png)
+![alt text](external/10_4_tutorial/img-19.png)
+![alt text](external/10_4_tutorial/img-20.png)
+## 4.1 Testing
+![alt text](external/10_4_tutorial/img-21.png)
+![alt text](external/10_4_tutorial/img-22.png)
+![alt text](external/10_4_tutorial/img-23.png)
+![alt text](external/10_4_tutorial/img-24.png)
+
+## 4.2 Client Web
+![alt text](external/10_4_tutorial/img-25.png)
+![alt text](external/10_4_tutorial/img-26.png)
+![alt text](external/10_4_tutorial/img-27.png)
+![alt text](external/10_4_tutorial/img-28.png)
+![alt text](external/10_4_tutorial/img-29.png)
+![alt text](external/10_4_tutorial/img-30.png)
+![alt text](external/10_4_tutorial/img-31.png)
+![alt text](external/10_4_tutorial/img-32.png)
+![alt text](external/10_4_tutorial/img-33.png)
+![alt text](external/10_4_tutorial/img-34.png)
+![alt text](external/10_4_tutorial/img-35.png)
+![alt text](external/10_4_tutorial/img-36.png)
+![alt text](external/10_4_tutorial/img-37.png)
+![alt text](external/10_4_tutorial/img-38.png)
+
+## 4.3 Altro esempio, riprendiamo CreditCardValidator
+- avevamo creato nella lezione 12 un Web Service che esponeva dei metodi per controllare se le carte fossero valide
+![alt text](external/10_4_tutorial/img-39.png)
+![alt text](external/10_4_tutorial/img-40.png)
+![alt text](external/10_4_tutorial/img-41.png)
+![alt text](external/10_4_tutorial/img-42.png)
+![alt text](external/10_4_tutorial/img-43.png)
+![alt text](external/10_4_tutorial/img-44.png)
+![alt text](external/10_4_tutorial/img-45.png)
+![alt text](external/10_4_tutorial/img-46.png)
+![alt text](external/10_4_tutorial/img-47.png)
+![alt text](external/10_4_tutorial/img-48.png)
+![alt text](external/10_4_tutorial/img-49.png)
+![alt text](external/10_4_tutorial/img-50.png)
+![alt text](external/10_4_tutorial/img-51.png)
+![alt text](external/10_4_tutorial/img-52.png)
