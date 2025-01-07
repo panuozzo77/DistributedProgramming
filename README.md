@@ -2,7 +2,11 @@
 [LINK](/book.epub)
 # Repository di Programmazione Distribuita
 
+
 🇮🇹 Benvenuto nel repository di **Programmazione Distribuita**! Questo repository contiene risorse per il corso di Programmazione Distribuita, incluse note di lezione, diapositive e suggerimenti pertinenti. Di seguito è riportata una panoramica della struttura delle cartelle e dei contenuti di ciascuna directory.
+
+## Puoi leggerlo anche dal tuo Kindle!
+Se ti interessa leggere tutte le note delle lezioni, puoi farlo, ho creato un libro in file MOBI per i Kindle [ed è proprio qui](/Programmazione%20Distribuita%20-%20Cristian%20Porzio.mobi)
 
 ## Indice
 **Per una panoramica completa degli appunti delle lezioni, fare riferimento all'[Indice](index.md).**
