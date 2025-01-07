@@ -1,5 +1,3 @@
-# È disponibile il libro qui sotto!
-[LINK](/book.epub)
 # Repository di Programmazione Distribuita
 
 
