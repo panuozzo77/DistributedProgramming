@@ -1,3 +1,5 @@
+# È disponibile il libro qui sotto!
+[LINK](/book.epub)
 # Repository di Programmazione Distribuita
 
 🇮🇹 Benvenuto nel repository di **Programmazione Distribuita**! Questo repository contiene risorse per il corso di Programmazione Distribuita, incluse note di lezione, diapositive e suggerimenti pertinenti. Di seguito è riportata una panoramica della struttura delle cartelle e dei contenuti di ciascuna directory.
